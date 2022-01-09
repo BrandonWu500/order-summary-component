@@ -31,6 +31,11 @@ body {
 h1,
 strong {
   color: var(--clr-neutral-dark);
+  font-weight: var(--fw-black);
+}
+
+h1 {
+  font-size: 1.6rem;
 }
 
 p {
@@ -74,10 +79,20 @@ main {
   background-color: var(--clr-neutral-light);
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0 1.5rem;
   padding: 1em 0;
   border-radius: var(--bor-rad-1);
+}
+
+.middle-left {
+  display: flex;
+  gap: 1em;
+  margin-left: 1em;
+}
+
+.middle-right {
+  margin-right: 1em;
 }
 
 .middle .wrapper p {
@@ -98,6 +113,7 @@ main {
 .btn {
   display: block;
   text-decoration: none;
+  font-weight: var(--fw-bold);
   padding: 1em;
   background-color: var(--clr-accent);
   color: var(--clr-neutral-light);
@@ -109,6 +125,7 @@ main {
 .btn:hover,
 .btn:focus {
   opacity: 0.7;
+  box-shadow: 0 20px 20px hsla(245, 75%, 52%, 0.342);
 }
 
 .link {
@@ -133,5 +150,16 @@ footer {
     background: url('../images/pattern-background-desktop.svg');
     background-repeat: repeat-x;
     background-color: var(--clr-primary);
+  }
+  main {
+    max-width: 425px;
+    gap: 1.5rem;
+  }
+  p {
+    max-width: 30ch;
+  }
+  .btn,
+  .middle {
+    margin: 0 3rem;
   }
 }

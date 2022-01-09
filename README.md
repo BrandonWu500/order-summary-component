@@ -42,7 +42,7 @@ Users should be able to:
 
 ### What I learned
 
-more practice with flexbox layouts
+more practice with flexbox layouts and using "gap" feature
 
 ## Author
 
