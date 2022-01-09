@@ -130,7 +130,8 @@ footer {
 
 @media (min-width: 800px) {
   body {
-    background: url('../images/pattern-background-desktop.svg') no-repeat;
+    background: url('../images/pattern-background-desktop.svg');
+    background-repeat: repeat-x;
     background-color: var(--clr-primary);
   }
 }
